@@ -1,0 +1,55 @@
+package hello;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class InfoController {
+
+   /*   @RequestMapping("/info")
+    public String info(@RequestParam(value="name", required=false, defaultValue="User") String name, Model model) {
+        model.addAttribute("name", name);
+     //   model.addAttribute("AccountNumber",AccountNumber);
+        return "info";
+    } */
+    
+ 
+    @RequestMapping(value = "/info", method = RequestMethod.GET)
+    public String viewInfo() {
+        return "info";
+    } 
+    
+  @RequestMapping(value = "/balance", method = RequestMethod.GET)
+    public String viewBalance() {
+        return "balance";
+    }
+    
+     @RequestMapping(value = "/transfer", method = RequestMethod.GET)
+    public String viewTransfer() {
+        return "transfer";
+    }
+      @RequestMapping(value = "/signup", method = RequestMethod.GET)
+    public String viewSignup() {
+        return "signup";
+    }
+      @RequestMapping(value = "/transactions", method = RequestMethod.GET)
+    public String viewTransactions() {
+        return "transactions";
+    } 
+    
+     @RequestMapping(value = "/directtransfer", method = RequestMethod.GET)
+    public String viewDirect() {
+        return "directtransfer";
+    }
+    
+      @RequestMapping(value = "/error", method = RequestMethod.GET)
+    public String viewError() {
+        return "error";
+    }
+    
+    
+}
