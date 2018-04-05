@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Home Page</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body><center>
+    <h1>Welcome to Your Bank<br></h1>
+    <h3> Please select your desired function:<br></h3>
+        <p> <a href="/signup">Signup</a></p><br>
+    <p> <a href="/info">Account Information</a></p><br>
+       <p> <a href="/balance">Account Balance</a></p><br>
+          <p> <a href="/transfer">Transfer Funds</a></p><br>
+          <p> <a href="/transactions">Transactions</a></p><br>
+          <p> <a href="/logout">Log out</a></p><br></center>
+</body>
+</html>
